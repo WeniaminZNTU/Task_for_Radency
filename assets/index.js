@@ -64,20 +64,19 @@ const chooseBestDistance = (t = 174, k = 3, ls = [51, 56, 58, 59, 61]) => {
   return null;
 };
 
-console.log(
-  'Результат функции с дефолтными значениями 1:',
-  chooseBestDistance()
-);
-console.log(
-  'Результат функции с дефолтными значениями 2:',
-  chooseBestDistance(163, 3, [50])
-);
-
-const t = getRandomValues(1000);
-const k = getRandomValues(10);
-const ls = getRandomValues(150, getRandomValues(10));
+const t = 1693;
+const k = 4;
+const ls = [348, 201, 114, 471, 472, 397, 199, 241, 321, 97, 11, 10, 358];
 
 console.log('t:', t);
 console.log('k:', k);
 console.log('ls:', ls);
-console.log('Результат c рандомными занчениями:', chooseBestDistance(t, k, ls));
+
+console.log(
+  'Результат:',
+  chooseBestDistance(
+    1693,
+    4,
+    [348, 201, 114, 471, 472, 397, 199, 241, 321, 97, 11, 10, 358]
+  )
+);
